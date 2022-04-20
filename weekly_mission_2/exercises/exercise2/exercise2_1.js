@@ -60,11 +60,15 @@ const explorers = [
     }
    ]
 
-   /* Sobre esta lista, realiza lo siguiente: */
+/* Sobre esta lista, realiza lo siguiente: */
 
-   /* 1.- Imprime el nombre (propiedad name) de cada explorer en la lista, usa FOR EACH */
-   explorers.forEach(explorer => console.log(explorer.name))
+/* 1.- Imprime el nombre (propiedad name) de cada explorer en la lista, usa FOR EACH */
+explorers.forEach(explorer => console.log(explorer.name))
 
-  /* 2.- Imprime el stack de cada explorer, usa FOR EACH */ 
-  explorers.forEach(explorer => console.log(explorer.stack))
+/* 2.- Imprime el stack de cada explorer, usa FOR EACH */ 
+explorers.forEach(explorer => console.log(explorer.stack))
 
+/* Crea una nueva lista con las listas de stacks de cada explorer, usa MAP */
+const stack_list = explorers.map((explorer) => explorer.stack)
+console.log(`\nLista con el stack de cada explorer: `)
+console.log(stack_list)
